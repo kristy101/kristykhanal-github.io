@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristy's Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #1a1a1a;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00b4d8;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+
+        .project {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            text-align: left;
+            color: #1a1a1a;
+            transition: color 0.3s ease;
+        }
+
+        .project:hover .project-title {
+            color: #00b4d8;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 3rem 0;
+        }
+
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #2a2a2a;
+            color: #1a1a1a;
+        }
+
+        .contact textarea {
+            grid-column: 1 / -1;
+        }
+
+        .contact button {
+            grid-column: 1 / -1;
+            background-color: #00b4d8;
+            color: #1a1a1a;
+            border: none;
+            padding: 0.8rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #0096c7;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #1a1a1a;
+        }
+
+        footer a {
+            color: #00b4d8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #0096c7;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">krishtina khanal</a>
+            <div class="nav-links">
+                <a href="#">work</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+            </div>
+        </nav>
+
+        <div class="projects">
+            <div class="project">
+                <img src="600x600.jpeg" alt="Project 1">
+                <div class="project-title">Project Name</div>
+            </div>
+            <div class="project">
+                <img src="600x600.jpeg" alt="Project 2">
+                <div class="project-title">Project Name</div>
+            </div>
+            <div class="project">
+                <img src="600x600.jpeg" alt="Project 3">
+                <div class="project-title">Project Name</div>
+            </div>
+            <div class="project">
+                <img src="600x600.jpeg" alt="Project 4">
+                <div class="project-title">Project Name</div>
+            </div>
+            <div class="project">
+                <img src="600x600.jpeg" alt="Project 5">
+                <div class="project-title">Project Name</div>
+            </div>
+            <div class="project">
+                <img src="600x600.jpeg" alt="Project 6">
+                <div class="project-title">Project Name</div>
+            </div>
+            <div class="project">
+                <img src="600x600.jpeg" alt="Project 7">
+                <div class="project-title">Project Name</div>
+            </div>
+            <div class="project">
+                <img src="600x600.jpeg" alt="Project 8">
+                <div class="project-title">Project Name</div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 krishtina khanal | <a href="mailto:kristykhanal04@gmail.com">kristykhanal04@gmail.com</a> | <a href="#" target="_blank">LinkedIn</a></p>
+        </footer>
+    </div>
+</body>
+</html>
