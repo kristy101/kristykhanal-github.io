@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="partsofme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="assets/img/krishtina mosaic.svg" alt="Logo" class="logo">
+        </a>        
+        <div class="nav-links">
+            <a href="art.html">art</a>
+            <a href="design.html">design</a>
+            <a href="let'scollaborate.html">let's collaborate</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="section1">
+            <div class="content">
+                <div class="image-container">
+                    <img src="/api/placeholder/600" alt="whoami">
+                </div>
+                <div class="text-container">
+                    <p>I’m Krishtina Khanal, a high school student from Nepal. I love exploring and working on new and wild ideas, enjoying the process as much as the discoveries themselves. I love reading, watching movies, listening to music, and... 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="content">
+                <div class="image-container">
+                    <img src="/api/placeholder/600/400" alt="Section 2">
+                </div>
+                <div class="text-container">
+                    <p>I love creative expression—art, design, technology, and everything in between. I thrive on the freedom to blend imagination with purpose, exploring new ways to bring ideas to life. My approach to design is driven by a deep desire to convey ideas, emotions, and experiences—using form, function, and medium to craft meaningful connections. As an artist, I view creativity as a form of self-expression, where I can resonate emotionally and intellectually. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="content">
+                <div class="image-container">
+                    <img src="assets/img/wordcloud.png" alt="Section 3">
+                </div>
+                <div class="text-container">
+                    <p>I love intersectional ideas—the blending of the natural and the artificial, the human and the digital. I thrive on concepts that merge seemingly unrelated fields, sparking new possibilities and uncovering fresh perspectives. It’s in the spaces where disciplines collide that I find the most exciting opportunities for innovation.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="section4">
+        <div class="content">
+            <div class="image-container">
+                <img src="/api/placeholder/600/400" alt="Section 4">
+            </div>
+            <div class="text-container">
+                <p>I love people—their stories, perspectives, and the unique ways they experience the world. Each individual offers a new lens through which we can understand life, filled with insights that challenge our assumptions and broaden our empathy. There's something profoundly moving about how diverse yet interconnected our human journeys are, and I’m constantly inspired by the richness of these experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
