@@ -28,8 +28,9 @@ nav {
 }
 
 .nav-links a {
-    font-family: "Inter";
-    font-weight: 400;
+    font-family: "Newsreader";
+    font-weight: 300; 
+    font-size: 15px;
     text-decoration: none;
     color: black;
     padding: 0 0.5em;
@@ -94,6 +95,10 @@ section.visible {
     margin-left:50px ;
 }
 
+.sec-1container{
+    margin-left: 20px;
+}
+
 .image-container img{
     width: 700px;
     height: auto;
@@ -101,9 +106,9 @@ section.visible {
 
 .text-container {
     flex: 1;
-    font-family: "Inter";
-    font-size: 24px;
-    font-weight: 400;
+    font-family: "Newsreader";
+    font-size: 20px;
+    font-weight: 300;
     color:#333;
 }
 

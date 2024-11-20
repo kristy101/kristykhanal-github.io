@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter';
+    font-family: 'Newsreader';
 }
 
 body {
@@ -25,6 +25,11 @@ nav {
 .logo {
     width: 200px;
     height: auto;
+}
+
+img{
+    width: 110%;
+    height: auto%;
 }
 
 .nav-links a {
