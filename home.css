@@ -19,12 +19,11 @@
     transform: translateY(-50%);
     left: 50.75%;
     transform: translateX(-50%);
-    width: 40%;
+    width: 50%;
     height: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
     max-width: 80%;
-    max-height: 80%;
   }
 
   /* img:hover{
@@ -72,3 +71,63 @@ height: 100%;
   .navbar a:last-child {
     margin-right: 0;
   }
+
+/* Responsive Breakpoints */
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+
+  .logo{
+    margin-bottom: 40px;
+  }
+}
+
+/* Medium screens */
+@media screen and (max-width: 768px) {
+  
+  .logo{
+    margin-bottom: 5px;
+  }
+
+  .navbar {
+      gap: 1.2em;
+  }
+
+  .navbar a {
+      font-size: 0.8em;
+      padding: 0.4em;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .container {
+      padding: 15px;
+  }
+  .logo{
+    margin-bottom: 5px;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+  }
+
+  .navbar a {
+      font-size: 0.7em;
+      padding: 0.3em;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 320px) {
+
+  .logo{
+    margin-bottom: 5px;
+  }
+  
+  .navbar a {
+      font-size: 0.6em;
+  }
+}
