@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Journey</title>
     <link rel="stylesheet" href="enlightenment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="back-nav">
+        <button onclick="window.history.back()" class="back-button">back</button>
+    </nav>
+    
     <div class="sidebar-left">
-        <div class="sidebar-text">visual narrative</div>
+        <div class="sidebar-text">sketches.</div>
     </div>
     <div class="sidebar-right">
-        <div class="sidebar-text">fragments of perception</div>
+        <div class="sidebar-text">visual narrative.</div>
     </div>
 
     <div class="portfolio-container">
@@ -19,54 +25,38 @@
             <div class="art-piece" data-page="eye-details.html">
                 <img src="assets/img/art/1-433x577.png" alt="Drawing of an eye, nose, and mouth">
                 <div class="art-description">
-                    fragments of perception merge, revealing the subtle intricacies of human expression
-                </div>
-            </div>
-            
-            <div class="art-piece" data-page="characters.html">
-                <img src="assets/img/art/2-433x577.png" alt="Drawing of cartoon characters">
-                <div class="art-description">
-                    playful figures dance across imagination's canvas, whispering stories untold
+                    disjoint.
                 </div>
             </div>
             
             <div class="art-piece" data-page="abstract-man.html">
                 <img src="assets/img/art/3-404x577.png" alt="Abstract drawing of a man">
                 <div class="art-description">
-                    form dissolves into abstraction, challenging the boundaries of human representation
+                    attached.
                 </div>
             </div>
             
             <div class="art-piece" data-page="minimalist-face.html">
                 <img src="assets/img/art/4-433x577.png" alt="Abstract drawing of a face with few colors">
                 <div class="art-description">
-                    minimalism speaks volumes, where color becomes emotion's whisper
+                    multitude.
                 </div>
             </div>
             
             <div class="art-piece" data-page="geometric-face.html">
                 <img src="assets/img/art/5-433x577.png" alt="Abstract drawing of a face with shapes and colors">
                 <div class="art-description">
-                    identity fragmented, reassembled through geometric language of perception
+                    untitled #01.
                 </div>
             </div>
-            
+    
             <div class="art-piece" data-page="goddess.html">
-                <img src="assets/img/art/6-433x577.png" alt="Drawing of a goddess with colors">
+                <img src="assets/img/art/7.png" alt="Drawing of a goddess with colors">
                 <div class="art-description">
-                    divine feminine emerges, transcending form through vibrant chromatic energy
+                    untitled #02.
                 </div>
             </div>
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll('.art-piece').forEach(piece => {
-            piece.addEventListener('click', function() {
-                const pageName = this.getAttribute('data-page');
-                window.location.href = pageName;
-            });
-        });
-    </script>
 </body>
 </html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kristy ~ ragat nepal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a5f7a 0%, #da0639 100%);
+            padding: 6rem 2rem 4rem;
+            color: white;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 2.5rem;
+            left: 50%;
+            transform: translateX(-570px);
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            padding: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .back-button:hover {
+            opacity: 1;
+        }
+        .back-button::before{
+            content: "￩";
+            font-size: 1em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .project-title {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            color: #e2e8f0;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+
+        .section {
+            margin: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1a5f7a;
+            margin-bottom: 1.5rem;
+        }
+
+        .overview-content {
+            font-size: 1.1rem;
+            color: #4a5568;
+            /* max-width: 80%; */
+            margin-bottom: 2rem;
+        }
+
+        .screenshot-section {
+            margin: 3rem 0;
+        }
+
+        .screenshot-header {
+            font-size: 1.25rem;
+            color: #1a5f7a;
+            margin-bottom: 1rem;
+        }
+
+        .screenshot {
+            width: 100%;
+            margin-bottom: 4rem;
+            border-radius: 4px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: #1a5f7a;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #0d2f3f;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            color: #4a5568;
+            margin-top: 1rem;
+        }
+
+        .tool-item {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 1200px) {
+            .back-button {
+                left: 2rem;
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 5rem 1rem 3rem;
+            }
+
+            .project-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .project-title {
+                font-size: 2.5rem;
+            }
+
+            .project-links {
+                flex-direction: column;
+            }
+
+            .section {
+                margin: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="design.html" class="back-button">Back</a>
+        <div class="container">
+            <h1 class="project-title">Ragat Nepal</h1>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span>Duration: 15 weeks</span>
+                </div>
+                <div class="meta-item">
+                    <span>Role: Designer</span>
+                </div>
+                <div class="meta-item">
+                    <span>Year: 2022</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-content">
+                <p>
+                    I designed the UI/UX for Ragat Nepal, a blood-sharing app dedicated to making donor-recipient connections faster and more reliable. The design prioritized simplicity and accessibility, ensuring users could quickly request or donate blood with minimal effort. A streamlined interface guided users through the process, with real-time availability updates and location-based donor matching. To enhance trust and usability, I incorporated verification features and clear visual cues for urgent requests. This project challenged me to think critically about design in high-stakes scenarios, reinforcing the importance of clarity, efficiency, and a user-first approach in digital healthcare solutions.
+                    </p>
+            </div>
+
+            <section class="section">
+                <h3 class="screenshot-header">Tools & Technologies</h2>
+                <div class="tools-grid">
+                    <span class="tool-item">Figma</span>
+                    <span class="tool-item">Adobe Illustrator</span>
+                    <span class="tool-item">Adobe Photoshop</span>
+                </div>
+            </section>
+            
+            <!-- <div class="project-links">
+                <a href="https://github.com/kristy101/Systematic-software" class="project-link">View on GitHub</a>
+            </div> -->
+        </section>
+
+        
+
+        <section class="section">
+            <h2 class="section-title">Screenshots</h2>
+            
+            <div class="screenshot-section">
+                <h3 class="screenshot-header">Login</h3>
+                <img src="assets/img/designs/rn1.png" alt="Landing Page" class="screenshot">
+            </div>
+        
+            <div class="screenshot-section">
+                <h3 class="screenshot-header">Homepage, Donor, & Profile</h3>
+                <img src="assets/img/designs/rn2.png" alt="Homepage (contiued)" class="screenshot">
+            </div>
+            <div class="screenshot-section">
+                <h3 class="screenshot-header">Feedback and Contact</h3>
+                <img src="assets/img/designs/rn3.png" alt="Services Page" class="screenshot">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

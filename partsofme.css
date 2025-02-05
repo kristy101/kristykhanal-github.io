@@ -28,6 +28,7 @@ nav {
 .logo {
     width: clamp(120px, 20vw, 200px);
     height: auto;
+    /* margin-left: 1rem; */
 }
 
 .nav-links {

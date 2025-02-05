@@ -1,0 +1,92 @@
+---
+title: "MATH 242: Lab 1"
+author: '[Enter team names here]'
+date: '[Enter date here]'
+output:
+  html_document:
+    fig_height: 4
+    fig_width: 6
+  pdf_document: default
+---
+
+
+
+* * *
+
+**Load data:**
+
+
+```{r echo=FALSE}
+load(url("http://foxweb.marist.edu/users/duy.nguyen2/mlb11.RData"))
+head(mlb11)
+```
+
+* * *
+
+#### 1:
+
+
+
+```{r}
+
+
+```
+
+
+#### 2:
+
+```{r}
+
+```
+
+
+#### 3: 
+```{r}
+
+```
+
+
+#### 4:
+```{r}
+
+```
+
+
+#### 5:
+```{r}
+
+```
+
+
+#### 6:
+```{r}
+
+```
+
+
+#### 7:
+```{r}
+
+```
+
+
+#### 8:
+```{r}
+
+```
+
+
+* * *
+
+## On your own
+
+#### 1:
+
+#### 2:
+
+#### 3:
+
+#### 4:
+
+#### 5:
+
